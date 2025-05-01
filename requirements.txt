@@ -1,6 +1,8 @@
 streamlit
+pymongo
 pandas
 matplotlib
-numpy
-requests
+plotly
+scikit-learn  # instead of 'sklearn'
 wordcloud
+numpy  # implicit requirement for many of these
