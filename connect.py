@@ -1,14 +1,12 @@
 import pymongo
 import json
-import os
 from bson import json_util
-from dotenv import load_dotenv
+import streamlit as st
 
 
 class MongoDbConnector:
     def __init__(self):
-        load_dotenv()
-        self.uri = os.getenv("MONGODB_URI")
+        self.uri = st.secrets["Mongodb_URI"]
     def concatenate(self,json_files, output_file):
         combined_data = []
 
